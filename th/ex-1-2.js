@@ -8,8 +8,13 @@
 */
 
 // Start coding here
+// const findIfItemExist = (products, productName) =>
+//   products.indexOf(productName) === -1
+//     ? `ไม่พบ ${productName} ในรายการสินค้า`
+//     : `พบ ${productName} ในรายการสินค้า`;
+
 const findIfItemExist = (products, productName) =>
-  products.indexOf(productName) === -1
+  products.includes(productName)
     ? `ไม่พบ ${productName} ในรายการสินค้า`
     : `พบ ${productName} ในรายการสินค้า`;
 
